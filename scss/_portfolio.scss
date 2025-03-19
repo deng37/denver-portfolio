@@ -9,6 +9,7 @@
    width: 100%;
    height: 100%;
    background-color: #000000;
+   overflow-x: hidden !important;
    /* overscroll-behavior-x: none; */
  }
 
@@ -435,10 +436,16 @@
    margin: auto;
  }
 
- .slider-image-fluid {
+ .slider-image-fluid, .slider-my-fluid {
     max-width: 80%;
+    max-height: 496px;
+ }
+
+ .slider-pikavia-fluid {
+    max-width: 97.45%;
     height: auto;
-}
+    max-height: 496px;
+  }
 
 .slider-navigation {
     text-align: center;
@@ -447,6 +454,16 @@
  @media (max-width: 1470px) {
     .slideshow-container {
         max-width: 80%;
+    }
+
+    .slider-pikavia-fluid {
+        max-width: 101.5%;
+    }
+ }
+
+ @media (max-width: 1200px) {
+    .slider-my-fluid {
+        max-height: 416px;
     }
  }
 
@@ -457,6 +474,19 @@
 
     .slider-image-fluid {
         max-width: 100%;
+    }
+
+    .slider-pikavia-fluid {
+        max-width: 126.5%;
+        margin-left: -8%;
+    }
+
+    .slider-my-fluid {
+        max-height: 338px;
+    }
+
+    .main-title-intro {
+        margin-top: 100px;
     }
  }
 
@@ -469,16 +499,39 @@
         margin-top: 0.5rem;
     }
 
+    .slider-pikavia-fluid {
+        width: 110%;
+        margin-bottom: 22px;
+    }
+
+    .slider-my-fluid {
+        max-height: 248px;
+    }
+
     body {
         max-height: 100vh;
         overflow-y: hidden;
+        overflow-x: hidden;
     }
  }
 
- .slider-pikavia-fluid {
-    max-width: 97.45%;
-    height: auto;
-  }
+ @media (max-width: 419px) {
+    .slider-my-fluid {
+        max-height: 240px;
+    }
+ }
+
+ @media (max-width: 407px) {
+    .slider-my-fluid {
+        max-height: 237px;
+    }
+ }
+
+ @media (max-width: 395px) {
+    .slider-my-fluid {
+        max-height: 226px;
+    }
+ }
 
  /* Next & previous buttons */
  .prev, .next {
@@ -864,6 +917,15 @@
     .sidebar-contact-email {
         font-size: 1.1rem;
         font-weight: lighter;
+    }
+
+    .main-background-aboutme {
+        padding-top: 7.5rem;
+        padding-bottom: 7.5rem;
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/bg-aboutme.webp");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
  @keyframes fade {
