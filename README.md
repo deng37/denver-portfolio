@@ -1,4 +1,4 @@
-## Denver Portfolio 
+## Denver Portfolio
 
 Created date 13 Feb 2021.
 
